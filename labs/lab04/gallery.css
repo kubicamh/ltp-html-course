@@ -1,0 +1,11 @@
+h2 {
+	align-content: center;
+}
+
+div.credit {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
