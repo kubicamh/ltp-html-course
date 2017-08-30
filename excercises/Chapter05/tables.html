@@ -4,39 +4,88 @@
 	<title>Table Demo</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../font-awesome-4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		table, tr, th, td
+			{
+				border: 2px solid black;
+				border-collapse: collapse;
+				padding-right: 5px;
+				padding-left: 5px;
+			}
+		.youtube {
+			text-align: center;
+		}
+  	caption {
+  		padding-left: 20px;
+  	}
+    table {
+      margin: 5px;
+    }
+
+	</style>
 </head>
+
+
 <body>
 
-<table style="width:100%">
+<table>
+  <caption><strong>Songs from the 80s</strong></caption>
   <tr>
+
+    <th>Artist</th>
     <th>Song</th>
-    <th>Artist</th> 
     <th>YouTube Link</th>
   </tr>
   <tr>
+
+    <td>Journey</td>
     <td>Faithfully</td>
-    <td>Journey</td> 
-    <td><a href="https://www.youtube.com/watch?v=OMD8hBsA-RI"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
+    <td class="youtube"><a href="https://www.youtube.com/watch?v=OMD8hBsA-RI" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
   </tr>
   <tr>
-    <td>Keep On Loving You</td>
-    <td>REO Speedwagon</td> 
-    <td><a href="https://www.youtube.com/watch?v=wJzNZ1c5C9c"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
-  </tr>
-  <tr>
-    <td>Surrender</td>
-    <td>Cheap Trick</td> 
-    <td><a href="https://www.youtube.com/watch?v=A1W3mIwzKiI"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
-  </tr>
-  <tr>
-    <td>Plainsong</td>
-    <td>The Cure</td> 
-    <td><a href="https://www.youtube.com/watch?v=ZkJwpYrcAko"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
+    <td rowspan="2">REO Speedwagon</td>
+    <td>Keep on Loving You</td>
+    <td class="youtube"><a href="https://www.youtube.com/watch?v=wJzNZ1c5C9c" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
   </tr>
    <tr>
+    <!-- REO Speedwagon -->
+    <td>Time for Me to Fly</td>
+    <td class="youtube"><a href="https://www.youtube.com/watch?v=TGwCP2hX2FM" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
+  </tr>
+  <tr>
+    <td>Cheap Trick</td>
+    <td>Surrender</td>
+    <td class="youtube"><a href="https://www.youtube.com/watch?v=A1W3mIwzKiI" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
+  </tr>
+  <tr>
+    <td>The Cure</td>
+    <td>Plainsong</td>
+    <td class="youtube"><a href="https://www.youtube.com/watch?v=ZkJwpYrcAko" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
+  </tr>
+   <tr>
+    <td>Scandal</td>
     <td>Goodbye to You</td>
-    <td>Scandal</td> 
-    <td><a href="https://www.youtube.com/watch?v=3h8n5lrfcTc"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
+    <td class="youtube"><a href="https://www.youtube.com/watch?v=3h8n5lrfcTc" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
+  </tr>
+   <tr>
+    <td>Billy Joel</td>
+    <td>Captain Jack</td>
+    <td class="youtube"><a href="https://www.youtube.com/watch?v=2xxugNQUtpE" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Mr. Mister</td>
+    <td>Broken Wings</td>
+    <td class="youtube"><a href="https://www.youtube.com/watch?v=nKhN1t_7PEY" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
+  </tr>
+  <tr>
+    <!-- Mr. Mister -->
+    <td>Kyrie</td>
+    <td class="youtube"><a href="https://www.youtube.com/watch?v=9NDjt4FzFWY" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
+  </tr>
+  <tr>
+    <td>Styx</td>
+    <td>Lady</td>
+    <td class="youtube"><a href="https://www.youtube.com/watch?v=QumxOQganfo" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></td>
   </tr>
 </table>
 
@@ -45,6 +94,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
