@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lab #6</title>
+	<style type="text/css">
+		span#who {
+			text-align: center;
+		}
+		td:first-child { 
+			text-align: right;
+		}
+	</style>
+
+</head>
+<body>
+
+<form action="#" method="post">
+	<span id="who">
+		<label for="first">First Name</label>
+		<input type="text" id="first" name="first" required="required" maxlength="50" />
+		<label for="last">Last Name</label>
+		<input type="text" id="last" name="last" required="required" maxlength="50" />
+		<label for="dob">Date of Birth</label>
+		<input type="date" id="dob" name="dob" required="required" />
+	</span>
+	<br />
+	<p>Although dental personal primarily treat the area in and around your mouth, your mouth is part of your entire body. Health problems that you may have, or medication that you may be taking, could have an important interrelationship with the dentistry you will recieve. Thank you for answering the following questions.</p>
+	<hr />
+	<table>
+		<tr>
+			<td>
+				<label id="phys_care">Are you under a physicians care now?</label>
+			</td>
+			<td>
+				<input type="radio" name="phys_care" value="Yes" />Yes&nbsp;
+				<input type="radio" name="phys_care" value="No" />No&nbsp;
+			</td>
+			<td>
+				<label id="phys_ex">If yes, please explain:</label>
+				<input type="text" name="phys_ex" />
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<label id="hospitalized">Have you ever been hospitalized or had a major operation?</label>
+			</td>
+			<td>
+				<input type="radio" name="hospitalized" value="Yes" />Yes&nbsp;
+				<input type="radio" name="hospitalized" value="No" />No&nbsp;
+			</td>
+			<td>
+				<label id="hosp_ex">If yes, please explain:</label>
+				<input type="text" name="hosp_ex" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label id="headinjury">Have you ever had a serious head or neck injury?</label>
+			</td>
+			<td>
+				<input type="radio" name="headinjury" value="Yes" />Yes&nbsp;
+				<input type="radio" name="headinjury" value="No" />No&nbsp;
+			</td>
+			<td>
+				<label id="head_ex">If yes, please explain:</label>
+				<input type="text" name="head_ex" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label id="meds">Are you taking medication, pills or drugs?</label>
+			</td>
+			<td>
+				<input type="radio" name="meds" value="Yes" />Yes&nbsp;
+				<input type="radio" name="meds" value="No" />No&nbsp;
+			</td>
+			<td>
+				<label id="meds_ex">If yes, please explain:</label>
+				<input type="text" name="meds_ex" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label id="phen-fen">Do you take or have you taken Phen-Fen or Redux?</label>
+			</td>
+			<td>
+				<input type="radio" name="phen-fen" value="Yes" />Yes&nbsp;
+				<input type="radio" name="phen-fen" value="No" />No&nbsp;
+			</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label id="bisphosphonates">Have you ever taken Fosamax, Boniva, Actonel or any other medications containing bisphosphonates?</label>
+			</td>
+			<td>
+				<input type="radio" name="bisphosphonates" value="Yes" />Yes&nbsp;
+				<input type="radio" name="bisphosphonates" value="No" />No&nbsp;
+			</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label id="diet">Are you on a special diet?</label>
+			</td>
+			<td>
+				<input type="radio" name="diet" value="Yes" />Yes&nbsp;
+				<input type="radio" name="diet" value="No" />No&nbsp;
+			</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label id="tobacco">Do you use tobacco?</label>
+			</td>
+			<td>
+				<input type="radio" name="tobacco" value="Yes" />Yes&nbsp;
+				<input type="radio" name="tobacco" value="No" />No&nbsp;
+			</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>		
+				<label id="drugs">Do you use controlled substances?</label>
+			</td>
+			<td>
+				<input type="radio" name="drugs" value="Yes" />Yes&nbsp;
+				<input type="radio" name="drugs" value="No" />No&nbsp;
+			</td>
+			<td></td>
+		</tr>
+	</table>
+	<fieldset>
+		<legend>Women: Are you</legend>
+
+		<label id="pregnant">Pregnant/Trying to get pregnant?</label>
+		<input type="radio" name="pregnant" value="Yes" />Yes&nbsp;
+		<input type="radio" name="pregnant" value="No" />No&nbsp;
+		&nbsp;&nbsp;
+
+		<label id="pill">Taking oral contraceptives?</label>
+		<input type="radio" name="pill" value="Yes" />Yes&nbsp;
+		<input type="radio" name="pill" value="No" />No&nbsp;
+		&nbsp;&nbsp;
+
+		<label id="nursing">Nursing?</label>
+		<input type="radio" name="nursing" value="Yes" />Yes&nbsp;
+		<input type="radio" name="nursing" value="No" />No&nbsp;
+	</fieldset>
+	<fieldset>
+		<legend>Are you allergic to any of the following?</legend>
+	</fieldset>
+	<fieldset>
+		<legend>Do you have or have you had any of the following?</legend>
+	</fieldset>
+
+</form>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script>
+$('#phys_care').change(function () {
+    if($(this).is(':Yes') {
+        $('#phys_ex').attr('required');
+    } else {
+        $('#phys_ex').removeAttr('required');
+    }
+});
+
+$('#hospitalized').change(function () {
+    if($(this).is(':Yes') {
+        $('#hosp_ex').attr('required');
+    } else {
+        $('#hosp_ex').removeAttr('required');
+    }
+});
+
+$('#headinjury').change(function () {
+    if($(this).is(':Yes') {
+        $('#head_ex').attr('required');
+    } else {
+        $('#head_ex').removeAttr('required');
+    }
+});
+
+$('#meds').change(function () {
+    if($(this).is(':Yes') {
+        $('#meds_ex').attr('required');
+    } else {
+        $('#meds_ex').removeAttr('required');
+    }
+});
+
+</script>
+
+</body>
+</html>
