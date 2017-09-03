@@ -1,0 +1,54 @@
+body {
+	
+	background-color: #f7eeca;
+	color: #333333; font-family: 'Bitter', serif;
+}
+
+h1 {
+	color: #0044bb;
+	font-family: 'Mukta', sans-serif;
+}
+
+h2 {
+	font-family: 'Mukta', sans-serif;
+}
+
+#primary img
+{
+    width: 200px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#header {
+	text-align: center;
+	color: #cc1111;
+	background-color: #ffdb74;
+	border: black solid 1px;
+}
+
+#primary {
+	width: 54%;
+	float: left;
+}
+
+#secondary, #moreSecondary {
+	width: 44%;
+	float: right;
+	margin: 2px;
+	border: 1px solid black;
+	padding: 5px;
+}
+	
+#secondary {
+	background-color: #d3e0ff;
+}
+
+#moreSecondary {
+	background-color: #ffd096;
+}
+
+#footer {
+	clear: both;
+	text-align: right;
+}

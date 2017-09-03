@@ -1,0 +1,86 @@
+HTML5 Specialist Designation Program
+Lab Exercise #6
+
+We’ll be practicing creating hyperlinks in this lab exercise.
+
+Lab Instructions
+
+1) Run your Brackets development environment.
+
+2) With Brackets running, choose File  New to open a new document. You should see the cursor
+flashing on the first line.
+
+3) Immediately save your document using File  Save from the drop-down menus. Navigate to a
+folder where you’d like to save your lab exercise. Save your lab under the file name lab_6.html.
+
+Saving your lab at this point will allow you to take advantage of the syntax highlighting features
+available in brackets.
+
+4) First you will need to key in the basic document structure. Be careful to key in the HTML5 code
+below exactly as it appears.
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <title>Lab #5</title>
+     </head>
+     <body>
+
+     </body>
+ </html>
+We’re using Lab #6 as the content for the title tag in this case.
+5) Using what you’ve learned about forms, you’re going to recreate the form following this step. Choose the best
+possible form control for each individual data point. Insure that form element limits the range of input to the
+degree possible to limit the amount of errant data entered. Make the form as usable and as easy to fill out as
+possible. Note: You don’t need to emulate the layout of the sample form—Just obtain the same data from the
+user.
+6) Once you’ve completed the form test it                Click the Download link towards the top of the
+thoroughly in your web browser. Make sure that           page.
+each radio button works independently.
+
+7) Visit the web site www.jquerymobile.com. We’re
+going to install the jQuery Mobile library to optimize
+the display of this document for mobile devices.
+8) Locate the copy and paste snippet and past the
+following lines in to the head section of your
+HTML5:
+
+ <link rel="stylesheet"
+ href="http://code.jquery.com/mobile/1.4.5/
+ jquery.mobile-1.4.5.min.css" />
+ <script
+ src="http://code.jquery.com/jquery-
+ 1.11.1.min.js"></script>
+ <script
+ src="http://code.jquery.com/mobile/1.4.5/j
+ query.mobile-1.4.5.min.js"></script>
+
+
+9) Save your document and test in your browser
+again. If using Chrome put your browser in mobile
+emulation mode by clicking More Tools 
+Developer Tools from the menu button on the right
+side of the browser. Once the developer tools are
+open, click on the toggle to turn on device mode.
+Examine how your form looks in a mobile device
+with the jQuery Mobile styling your elements.
+
+Challenge Yourself
+Enhance your skills by attempting the exercises
+below.
+
+1) Review the previous lab (lab #4). Gather the
+images and descriptions and place them in a table
+instead of in a gallery format. Look for creative or
+interesting ways to display your images using a
+table.
+
+2) Put your pages on the web. We’ve arranged a
+special deal with Blue Host. Visit
+http://www.bluehost.com/track/learntoprogra
+m/ and click “Get Stated Now.” You will be able to
+access web hosting plans as low as $3.49 a month.
+Once Blue Host takes you through the process of
+creating your domain and web server upload your
+lab and post the URL for the others in the class to
+see.
+
