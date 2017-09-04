@@ -2,6 +2,7 @@ body {
 	
 	background-color: #f7eeca;
 	color: #333333; font-family: 'Bitter', serif;
+
 }
 
 h1 {
@@ -51,4 +52,13 @@ h2 {
 #footer {
 	clear: both;
 	text-align: right;
+}
+
+@media screen and (max-width: 800px) {
+	#primary, #secondary, #moreSecondary {
+		width: 95%;
+		clear: both;
+		margin: 10px;
+	}
+
 }
