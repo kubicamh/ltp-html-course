@@ -1,0 +1,15 @@
+img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border: blue dashed 10px;
+  outline: 	yellow groove 25px;
+  margin: 	60px 20px 30px 20px;
+  background-color: red;
+}
+
+.total {
+	text-align: right;
+	float: right;
+	margin-left: 30px;
+}

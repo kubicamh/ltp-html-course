@@ -1,0 +1,22 @@
+body {
+	background-color: yellow;
+}
+
+div.graphic {
+	height: 50vh;
+	width: 50vw;
+	background-image: 
+		url("http://alextrochut.com/wp-content/uploads/2015/01/LOREMIPSUM_1-1200x1200.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 481px) {
+    body {
+        background-color: lightgreen;
+    }
+
+@media screen and (min-width: 1001px) {
+    body {
+        background-color: lavender;
+    }

@@ -1,0 +1,50 @@
+h1 {
+	font-family: 'Indie Flower', cursive;
+}
+
+ul {
+	list-style-type: square;
+}
+
+.favcolor {
+	color: green;
+}
+
+body {
+	background-image: 
+	url("https://i.pinimg.com/236x/7c/fe/8c/7cfe8c1126326bd450c36a6ea0d17961--sun-template-printable-sun-clipart.jpg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 400px 400px;
+}
+
+#my_menu .submenu ul {
+	display: none;
+}
+
+#my_menu .submenu:hover ul {
+	display: block;
+	background-color: beige;
+	position: fixed;
+/*  top: 0;
+  left: 100px;*/
+  z-index:999;
+}
+
+#my_menu {
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: beige;
+    height:40px;
+}
+
+.directory a {
+	text-align: right;
+}
+
+table { 
+    border-spacing: 30px 10px;
+    border-collapse: separate;
+}

@@ -1,0 +1,70 @@
+#s1 {
+	color: blue;
+}
+
+#s2 {
+	color: red;
+}
+
+#s3 {
+	/* Appears on own line */
+		color: purple;
+		display: block;
+}
+
+#s4 {
+	color: green;
+}
+
+#s5 {
+	color: grey;
+}
+
+p#p1 {
+	/* Inline with p2 */
+		background-color: 	yellow;
+		float: left;
+		display: inline;
+}
+
+p#p2 {
+	/* Inline with p1 */
+		background-color: 	lightblue;
+		float: left;
+		overflow: auto;
+		display: inline;
+}
+
+#img1 {
+	/* fixed position 200px from left and 300px from top 
+		behind text when you scroll down */
+		z-index: -1;
+		position: fixed;
+		left: 200px;
+		top: 300px;
+		height: auto; 
+    	width: auto; 
+    	max-width: 100px; 
+    	max-height: 100px;
+}
+
+#img2 {
+	/* absolute position 500px from top 
+		floating infront of text */
+		z-index: 1;
+		position: absolute;
+		left: 0;
+		top: 500px;
+		height: auto; 
+    	width: auto; 
+    	max-width: 100px; 
+    	max-height: 100px;
+}
+
+span {
+	z-index: 0;
+}
+
+.addheight {
+	height: 10px;
+}
